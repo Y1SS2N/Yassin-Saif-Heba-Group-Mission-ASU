@@ -168,6 +168,10 @@ def generate_launch_description():
                 package='erc_nav_benchmark',
                 executable='teleop_gui_node.py',
                 name='teleop_gui_node',
+                parameters=[
+                    {'level': level},
+                    {'config_path': config_path},
+                ],
                 output='screen',
             )
         ]

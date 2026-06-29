@@ -160,10 +160,12 @@
         <remapping>odom:=odom</remapping>
       </ros>
 
+      <num_wheel_pairs>2</num_wheel_pairs>
+
       <!-- Wheels -->
       <left_joint>joint_fl</left_joint>
-      <right_joint>joint_fr</right_joint>
       <left_joint>joint_rl</left_joint>
+      <right_joint>joint_fr</right_joint>
       <right_joint>joint_rr</right_joint>
 
       <!-- Kinematics -->

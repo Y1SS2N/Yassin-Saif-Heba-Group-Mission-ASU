@@ -241,6 +241,18 @@ class JudgingEngine(Node):
         if self.current_wp_idx >= len(self.waypoints):
             return
 
+        # Check for sequence compliance (entering any future waypoint out of order)
+        for idx in range(self.current_wp_idx + 1, len(self.waypoints)):
+            target_x, target_y = self.waypoints[idx]
+            dist = math.hypot(x - target_x, y - target_y)
+            if dist <= self.prox_radius:
+                if not self.sequence_violated:
+                    self.get_logger().warn(
+                        f"{RED}SEQUENCE VIOLATION:{RESET} Entered WP{idx+1} before WP{self.current_wp_idx+1}!"
+                    )
+                    self.sequence_violated = True
+
+        # Check current target
         target_x, target_y = self.waypoints[self.current_wp_idx]
         dist = math.hypot(x - target_x, y - target_y)
 
@@ -348,7 +360,7 @@ class JudgingEngine(Node):
         else:
             status_str = f"{YELLOW}{status}{RESET}"
 
-        score_str = f"{score:.4f}"
+        score_str = f"{score:.2f}"
         if score >= 0.7:
             score_str = f"{GREEN}{score_str}{RESET}"
         elif score >= 0.3:
@@ -360,7 +372,7 @@ class JudgingEngine(Node):
         plain = (
             "\n"
             "============================================================\n"
-            "           ERC NAV BENCHMARK RUN TERMINATION REPORT        \n"
+            "ERC NAV BENCHMARK RUN TERMINATION REPORT\n"
             "============================================================\n"
             f"Test Scenario ID             : Level_{self.level}\n"
             f"Final Run Status             : {status}\n"
@@ -368,8 +380,8 @@ class JudgingEngine(Node):
             f"Sequence Compliance Status   : {seq_status}\n"
             f"Total Traversal Latency      : {elapsed:.2f} seconds\n"
             f"Actual Distance Traveled     : {self.total_dist:.2f} meters\n"
-            f"Normalized Performance Score : {score:.4f}\n"
-            f"Driving Smoothness Index     : {smoothness}\n"
+            f"Normalized Performance Score : {score:.2f} (Normalized against optimal path difficulty)\n"
+            f"Driving Smoothness Index     : {smoothness} (Based on teleop input variance)\n"
             "============================================================\n"
         )
         self._plain_report = plain   # store for log file
@@ -378,7 +390,7 @@ class JudgingEngine(Node):
         coloured = (
             f"\n{CYAN}{BOLD}"
             "============================================================\n"
-            "           ERC NAV BENCHMARK RUN TERMINATION REPORT        \n"
+            "ERC NAV BENCHMARK RUN TERMINATION REPORT\n"
             f"============================================================{RESET}\n"
             f"Test Scenario ID             : {BOLD}Level_{self.level}{RESET}\n"
             f"Final Run Status             : {status_str}\n"
@@ -386,8 +398,8 @@ class JudgingEngine(Node):
             f"Sequence Compliance Status   : {seq_status}\n"
             f"Total Traversal Latency      : {elapsed:.2f} seconds\n"
             f"Actual Distance Traveled     : {self.total_dist:.2f} meters\n"
-            f"Normalized Performance Score : {score_str}\n"
-            f"Driving Smoothness Index     : {smoothness}\n"
+            f"Normalized Performance Score : {score_str} (Normalized against optimal path difficulty)\n"
+            f"Driving Smoothness Index     : {smoothness} (Based on teleop input variance)\n"
             f"{CYAN}{BOLD}============================================================{RESET}\n"
         )
         return coloured
