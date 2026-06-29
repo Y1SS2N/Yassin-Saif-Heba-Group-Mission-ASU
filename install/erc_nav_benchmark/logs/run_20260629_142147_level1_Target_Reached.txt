@@ -1,0 +1,13 @@
+
+============================================================
+ERC NAV BENCHMARK RUN TERMINATION REPORT
+============================================================
+Test Scenario ID             : Level_1
+Final Run Status             : Target Reached
+Checkpoints Cleared          : 4 / 4
+Sequence Compliance Status   : PASSED
+Total Traversal Latency      : 79.71 seconds
+Actual Distance Traveled     : 39.92 meters
+Normalized Performance Score : 0.40 (Normalized against optimal path difficulty)
+Driving Smoothness Index     : Moderate (Based on teleop input variance)
+============================================================

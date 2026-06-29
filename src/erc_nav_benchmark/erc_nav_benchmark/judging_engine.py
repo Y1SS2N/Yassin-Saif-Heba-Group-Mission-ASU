@@ -514,7 +514,6 @@ class JudgingEngine(Node):
             f"============================================================{RESET}\n"
             f"  Level        : {BOLD}{self.level}{RESET}\n"
             f"  Waypoints    : {wp_list}\n"
-            f"  Timeout      : {self.timeout_sec}s\n"
             f"  Optimal time : {self.optimal_time}s\n"
             f"  Prox. radius : {self.prox_radius}m\n"
             f"{CYAN}  START → Drive the rover!  (teleop or autonomous){RESET}\n"

@@ -1,0 +1,13 @@
+
+============================================================
+ERC NAV BENCHMARK RUN TERMINATION REPORT
+============================================================
+Test Scenario ID             : Level_3
+Final Run Status             : Catastrophic Collision
+Checkpoints Cleared          : 0 / 4
+Sequence Compliance Status   : PASSED
+Total Traversal Latency      : 9.08 seconds
+Actual Distance Traveled     : 1.94 meters
+Normalized Performance Score : 0.00 (Normalized against optimal path difficulty)
+Driving Smoothness Index     : High (Based on teleop input variance)
+============================================================
