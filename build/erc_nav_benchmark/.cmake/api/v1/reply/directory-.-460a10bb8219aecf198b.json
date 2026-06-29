@@ -101,43 +101,43 @@
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 24,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 29,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 34,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 39,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 44,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 49,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 9,
 				"file" : 3,
-				"line" : 53,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
@@ -324,7 +324,7 @@
 			"destination" : "share/erc_nav_benchmark/environment",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/pythonpath.sh"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/pythonpath.sh"
 			],
 			"type" : "file"
 		},
@@ -334,7 +334,7 @@
 			"destination" : "share/erc_nav_benchmark/environment",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/pythonpath.dsv"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/pythonpath.dsv"
 			],
 			"type" : "file"
 		},
@@ -345,7 +345,7 @@
 			"paths" : 
 			[
 				{
-					"from" : "/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_python/erc_nav_benchmark/erc_nav_benchmark.egg-info",
+					"from" : "/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_python/erc_nav_benchmark/erc_nav_benchmark.egg-info",
 					"to" : "."
 				}
 			],
@@ -377,6 +377,7 @@
 			[
 				"erc_nav_benchmark/judging_engine.py",
 				"erc_nav_benchmark/teleop_node.py",
+				"erc_nav_benchmark/teleop_gui_node.py",
 				"erc_nav_benchmark/waypoint_publisher.py"
 			],
 			"type" : "file"
@@ -459,7 +460,7 @@
 			"destination" : "share/ament_index/resource_index/package_run_dependencies",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/erc_nav_benchmark"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/erc_nav_benchmark"
 			],
 			"type" : "file"
 		},
@@ -469,7 +470,7 @@
 			"destination" : "share/ament_index/resource_index/parent_prefix_path",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/erc_nav_benchmark"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/erc_nav_benchmark"
 			],
 			"type" : "file"
 		},
@@ -489,7 +490,7 @@
 			"destination" : "share/erc_nav_benchmark/environment",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/ament_prefix_path.dsv"
 			],
 			"type" : "file"
 		},
@@ -509,7 +510,7 @@
 			"destination" : "share/erc_nav_benchmark/environment",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/path.dsv"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/path.dsv"
 			],
 			"type" : "file"
 		},
@@ -519,7 +520,7 @@
 			"destination" : "share/erc_nav_benchmark",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.bash"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.bash"
 			],
 			"type" : "file"
 		},
@@ -529,7 +530,7 @@
 			"destination" : "share/erc_nav_benchmark",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.sh"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.sh"
 			],
 			"type" : "file"
 		},
@@ -539,7 +540,7 @@
 			"destination" : "share/erc_nav_benchmark",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.zsh"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.zsh"
 			],
 			"type" : "file"
 		},
@@ -549,7 +550,7 @@
 			"destination" : "share/erc_nav_benchmark",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.dsv"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/local_setup.dsv"
 			],
 			"type" : "file"
 		},
@@ -559,7 +560,7 @@
 			"destination" : "share/erc_nav_benchmark",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_environment_hooks/package.dsv"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_environment_hooks/package.dsv"
 			],
 			"type" : "file"
 		},
@@ -569,7 +570,7 @@
 			"destination" : "share/ament_index/resource_index/packages",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_index/share/ament_index/resource_index/packages/erc_nav_benchmark"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_index/share/ament_index/resource_index/packages/erc_nav_benchmark"
 			],
 			"type" : "file"
 		},
@@ -579,8 +580,8 @@
 			"destination" : "share/erc_nav_benchmark/cmake",
 			"paths" : 
 			[
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_core/erc_nav_benchmarkConfig.cmake",
-				"/home/yassin/ros2_ws/build/erc_nav_benchmark/ament_cmake_core/erc_nav_benchmarkConfig-version.cmake"
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_core/erc_nav_benchmarkConfig.cmake",
+				"/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark/ament_cmake_core/erc_nav_benchmarkConfig-version.cmake"
 			],
 			"type" : "file"
 		},

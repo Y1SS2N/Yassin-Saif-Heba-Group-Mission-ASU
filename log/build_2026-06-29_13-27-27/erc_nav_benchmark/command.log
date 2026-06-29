@@ -1,0 +1,2 @@
+Invoking command in '/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saif/Desktop/RosData/ros2_prog1/install/my_py_pkg1:/opt/ros/humble /usr/bin/cmake --build /home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark -- -j16 -l16
+Invoked command in '/home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saif/Desktop/RosData/ros2_prog1/install/my_py_pkg1:/opt/ros/humble /usr/bin/cmake --build /home/saif/Desktop/ros2_ws1/build/erc_nav_benchmark -- -j16 -l16

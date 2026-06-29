@@ -16,6 +16,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   erc_nav_benchmark/judging_engine.py
   erc_nav_benchmark/teleop_node.py
+  erc_nav_benchmark/teleop_gui_node.py
   erc_nav_benchmark/waypoint_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )

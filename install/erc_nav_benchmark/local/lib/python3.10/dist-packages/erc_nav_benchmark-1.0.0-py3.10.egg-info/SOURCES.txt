@@ -1,6 +1,7 @@
 setup.py
 erc_nav_benchmark/__init__.py
 erc_nav_benchmark/judging_engine.py
+erc_nav_benchmark/teleop_gui_node.py
 erc_nav_benchmark/teleop_node.py
 erc_nav_benchmark/waypoint_publisher.py
 erc_nav_benchmark.egg-info/PKG-INFO

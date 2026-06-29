@@ -5,15 +5,11 @@ ERC NAV BENCHMARK — Master Run Script
 ============================================================
 Usage:
   python3 run_benchmark.py --level 1
-  python3 run_benchmark.py --level 2 --no-teleop
   python3 run_benchmark.py --level 3 --rviz
-  python3 run_benchmark.py --level 1 --headless
 
 Arguments:
   --level      [1|2|3]   Difficulty level (required)
-  --no-teleop            Skip teleop node (for autonomous testing)
   --rviz                 Launch RViz visualizer
-  --headless             Run Gazebo without GUI
   --list-logs            List all saved run reports and exit
 
 This script:
@@ -57,17 +53,12 @@ def parse_args():
             "Examples:\n"
             "  python3 run_benchmark.py --level 1\n"
             "  python3 run_benchmark.py --level 2 --rviz\n"
-            "  python3 run_benchmark.py --level 3 --headless --no-teleop\n"
         )
     )
     parser.add_argument('--level',     type=int, choices=[1, 2, 3],
                         required=True, help='Difficulty level (1=easy, 2=medium, 3=hard)')
-    parser.add_argument('--no-teleop', action='store_true',
-                        help='Disable keyboard teleop (for autonomous stack testing)')
     parser.add_argument('--rviz',      action='store_true',
                         help='Launch RViz2 visualizer alongside simulation')
-    parser.add_argument('--headless',  action='store_true',
-                        help='Run Gazebo without GUI (gzserver only)')
     parser.add_argument('--list-logs', action='store_true',
                         help='Print all saved run reports and exit')
     return parser.parse_args()
@@ -149,9 +140,7 @@ def check_environment():
 #  LAUNCH
 # ─────────────────────────────────────────────────────────────────────────────
 def launch(args):
-    teleop   = 'false' if args.no_teleop else 'true'
     rviz     = 'true'  if args.rviz      else 'false'
-    headless = 'true'  if args.headless  else 'false'
 
     # Set up GAZEBO_MODEL_PATH so Gazebo finds our rover
     models_path = os.path.join(SCRIPT_DIR, 'install', PKG_NAME, 'share', PKG_NAME, 'models')
@@ -167,9 +156,7 @@ def launch(args):
         'ros2', 'launch',
         PKG_NAME, 'benchmark.launch.py',
         f'level:={args.level}',
-        f'teleop:={teleop}',
         f'rviz:={rviz}',
-        f'headless:={headless}',
     ]
 
     print(f"\n{CYAN}{BOLD}")
@@ -177,9 +164,8 @@ def launch(args):
     print("              ERC NAV BENCHMARK STARTING                   ")
     print("============================================================")
     print(f"  Level    : {args.level}  {'(Easy)' if args.level==1 else '(Medium)' if args.level==2 else '(Hard)'}")
-    print(f"  Teleop   : {'Enabled — use WASD keys' if not args.no_teleop else 'Disabled'}")
+    print(f"  Teleop   : Enabled — use WASD keys")
     print(f"  RViz     : {'Yes' if args.rviz else 'No'}")
-    print(f"  Headless : {'Yes' if args.headless else 'No (GUI)'}")
     print("============================================================")
     print(f"  Command  : {' '.join(cmd)}")
     print(f"============================================================{RESET}")

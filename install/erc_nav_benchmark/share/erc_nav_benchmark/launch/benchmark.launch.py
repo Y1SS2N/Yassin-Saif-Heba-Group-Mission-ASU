@@ -10,7 +10,7 @@ Launches:
   2. Robot spawner (ERC rover)
   3. Waypoint publisher
   4. Judging engine
-  5. Teleop node (optional, disable with teleop:=false)
+  5. Teleop node (always running)
   6. RViz visualizer (optional, disable with rviz:=false)
 ============================================================
 """
@@ -49,28 +49,14 @@ def generate_launch_description():
         description='Difficulty level: 1 (easy) | 2 (medium) | 3 (hard)'
     )
 
-    teleop_arg = DeclareLaunchArgument(
-        'teleop',
-        default_value='true',
-        description='Launch keyboard teleop node (true/false)'
-    )
-
     rviz_arg = DeclareLaunchArgument(
         'rviz',
         default_value='false',
         description='Launch RViz visualizer (true/false)'
     )
 
-    headless_arg = DeclareLaunchArgument(
-        'headless',
-        default_value='false',
-        description='Run Gazebo without GUI (true/false)'
-    )
-
     level    = LaunchConfiguration('level')
-    teleop   = LaunchConfiguration('teleop')
     rviz     = LaunchConfiguration('rviz')
-    headless = LaunchConfiguration('headless')
 
     config_path = os.path.join(pkg_share, 'config', 'waypoints.yaml')
 
@@ -180,11 +166,9 @@ def generate_launch_description():
         actions=[
             Node(
                 package='erc_nav_benchmark',
-                executable='teleop_node.py',
-                name='teleop_node',
+                executable='teleop_gui_node.py',
+                name='teleop_gui_node',
                 output='screen',
-                prefix='xterm -e',   # opens in separate terminal window
-                condition=IfCondition(teleop),
             )
         ]
     )
@@ -210,7 +194,7 @@ def generate_launch_description():
         '          ERC NAV BENCHMARK — STARTING                     \n'
         '============================================================\n'
         '  Level    : ', level, '\n'
-        '  Teleop   : ', teleop, '\n'
+        '  Teleop   : Enabled \n'
         '  RViz     : ', rviz, '\n'
         '  World    : level_', level, '.world\n'
         '============================================================\n'
@@ -220,9 +204,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         level_arg,
-        teleop_arg,
         rviz_arg,
-        headless_arg,
         start_log,
         gazebo_l1,
         gazebo_l2,
