@@ -44,23 +44,50 @@
         </material>
       </visual>
 
-      <!-- BUMPER CONTACT SENSOR (critical for crash detection) -->
+    </link>
+
+    <!-- Dedicated Front Bumper Link with Contact Sensor -->
+    <link name="front_bumper">
+      <pose>0.28 0 0.18 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.001</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.001</iyy><iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="bumper_collision">
+        <geometry><box><size>0.02 0.35 0.15</size></box></geometry>
+      </collision>
+      <visual name="bumper_visual">
+        <geometry><box><size>0.02 0.35 0.15</size></box></geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1</ambient>
+          <diffuse>0.8 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+
       <sensor name="bumper_sensor" type="contact">
         <contact>
-          <collision>chassis_collision</collision>
+          <collision>bumper_collision</collision>
         </contact>
         <plugin name="gazebo_ros_bumper" filename="libgazebo_ros_bumper.so">
           <ros>
             <namespace>/</namespace>
             <remapping>bumper_states:=bumper_states</remapping>
           </ros>
-          <frame_name>base_link</frame_name>
+          <frame_name>front_bumper</frame_name>
         </plugin>
         <always_on>true</always_on>
         <update_rate>100</update_rate>
       </sensor>
-
     </link>
+
+    <joint name="joint_bumper" type="fixed">
+      <parent>base_link</parent>
+      <child>front_bumper</child>
+    </joint>
 
     <!-- ============================
          WHEELS (4x)
@@ -173,8 +200,8 @@
       <wheel_diameter>0.18</wheel_diameter>
 
       <!-- Limits -->
-      <max_wheel_torque>20</max_wheel_torque>
-      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+      <max_wheel_torque>100</max_wheel_torque>
+      <max_wheel_acceleration>5.0</max_wheel_acceleration>
 
       <!-- Output -->
       <publish_odom>true</publish_odom>

@@ -229,8 +229,9 @@ class JudgingEngine(Node):
             )
             self.status_pub.publish(status_msg)
 
-        if remaining <= 0:
-            self._terminate("Timeout")
+        # Disabled timeout check per user request
+        # if remaining <= 0:
+        #     self._terminate("Timeout")
 
     # ─────────────────────────────────────────────────────────────────────────
     #  WAYPOINT LOGIC

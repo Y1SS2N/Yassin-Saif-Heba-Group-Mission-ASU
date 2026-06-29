@@ -13,8 +13,8 @@ class TeleopGUINode(Node):
     def __init__(self):
         super().__init__('teleop_gui_node')
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.linear_speed = 0.5
-        self.angular_speed = 1.0
+        self.linear_speed = 1.2
+        self.angular_speed = 1.8
 
         self.current_linear = 0.0
         self.current_angular = 0.0
