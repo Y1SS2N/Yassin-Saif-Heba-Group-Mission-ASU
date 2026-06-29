@@ -1,0 +1,6 @@
+Invoking command in '/home/yassin/ros2_ws/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yassin/ros2_ws/src/erc_nav_benchmark -DCMAKE_INSTALL_PREFIX=/home/yassin/ros2_ws/install/erc_nav_benchmark
+Invoked command in '/home/yassin/ros2_ws/build/erc_nav_benchmark' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yassin/ros2_ws/src/erc_nav_benchmark -DCMAKE_INSTALL_PREFIX=/home/yassin/ros2_ws/install/erc_nav_benchmark
+Invoking command in '/home/yassin/ros2_ws/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yassin/ros2_ws/build/erc_nav_benchmark -- -j8 -l8
+Invoked command in '/home/yassin/ros2_ws/build/erc_nav_benchmark' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yassin/ros2_ws/build/erc_nav_benchmark -- -j8 -l8
+Invoking command in '/home/yassin/ros2_ws/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yassin/ros2_ws/build/erc_nav_benchmark
+Invoked command in '/home/yassin/ros2_ws/build/erc_nav_benchmark' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yassin/ros2_ws/build/erc_nav_benchmark

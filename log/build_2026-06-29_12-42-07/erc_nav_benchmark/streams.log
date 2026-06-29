@@ -1,0 +1,84 @@
+[0.010s] Invoking command in '/home/yassin/ros2_ws/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yassin/ros2_ws/src/erc_nav_benchmark -DCMAKE_INSTALL_PREFIX=/home/yassin/ros2_ws/install/erc_nav_benchmark
+[0.146s] -- The C compiler identification is GNU 11.4.0
+[0.253s] -- The CXX compiler identification is GNU 11.4.0
+[0.264s] -- Detecting C compiler ABI info
+[0.346s] -- Detecting C compiler ABI info - done
+[0.355s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.355s] -- Detecting C compile features
+[0.356s] -- Detecting C compile features - done
+[0.361s] -- Detecting CXX compiler ABI info
+[0.454s] -- Detecting CXX compiler ABI info - done
+[0.464s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.464s] -- Detecting CXX compile features
+[0.465s] -- Detecting CXX compile features - done
+[0.472s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.634s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.742s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[0.902s] -- Configuring done
+[0.906s] -- Generating done
+[0.908s] -- Build files have been written to: /home/yassin/ros2_ws/build/erc_nav_benchmark
+[0.913s] Invoked command in '/home/yassin/ros2_ws/build/erc_nav_benchmark' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yassin/ros2_ws/src/erc_nav_benchmark -DCMAKE_INSTALL_PREFIX=/home/yassin/ros2_ws/install/erc_nav_benchmark
+[0.915s] Invoking command in '/home/yassin/ros2_ws/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yassin/ros2_ws/build/erc_nav_benchmark -- -j8 -l8
+[0.974s] Built target ament_cmake_python_copy_erc_nav_benchmark
+[1.237s] running egg_info
+[1.238s] creating erc_nav_benchmark.egg-info
+[1.238s] writing erc_nav_benchmark.egg-info/PKG-INFO
+[1.238s] writing dependency_links to erc_nav_benchmark.egg-info/dependency_links.txt
+[1.239s] writing top-level names to erc_nav_benchmark.egg-info/top_level.txt
+[1.239s] writing manifest file 'erc_nav_benchmark.egg-info/SOURCES.txt'
+[1.241s] reading manifest file 'erc_nav_benchmark.egg-info/SOURCES.txt'
+[1.242s] writing manifest file 'erc_nav_benchmark.egg-info/SOURCES.txt'
+[1.273s] Built target ament_cmake_python_build_erc_nav_benchmark_egg
+[1.284s] Invoked command in '/home/yassin/ros2_ws/build/erc_nav_benchmark' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yassin/ros2_ws/build/erc_nav_benchmark -- -j8 -l8
+[1.294s] Invoking command in '/home/yassin/ros2_ws/build/erc_nav_benchmark': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yassin/ros2_ws/build/erc_nav_benchmark
+[1.302s] -- Install configuration: ""
+[1.302s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/environment/pythonpath.sh
+[1.302s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/environment/pythonpath.dsv
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark-1.0.0-py3.10.egg-info
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark-1.0.0-py3.10.egg-info/SOURCES.txt
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark-1.0.0-py3.10.egg-info/PKG-INFO
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark-1.0.0-py3.10.egg-info/top_level.txt
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark-1.0.0-py3.10.egg-info/dependency_links.txt
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark
+[1.303s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/__init__.py
+[1.304s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/waypoint_publisher.py
+[1.304s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/judging_engine.py
+[1.304s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/teleop_node.py
+[1.344s] Listing '/home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark'...
+[1.345s] Compiling '/home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/__init__.py'...
+[1.345s] Compiling '/home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/judging_engine.py'...
+[1.345s] Compiling '/home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/teleop_node.py'...
+[1.345s] Compiling '/home/yassin/ros2_ws/install/erc_nav_benchmark/local/lib/python3.10/dist-packages/erc_nav_benchmark/waypoint_publisher.py'...
+[1.350s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/lib/erc_nav_benchmark/judging_engine.py
+[1.350s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/lib/erc_nav_benchmark/teleop_node.py
+[1.350s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/lib/erc_nav_benchmark/waypoint_publisher.py
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/launch
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/launch/benchmark.launch.py
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/worlds
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/worlds/level_2.world
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/worlds/level_3.world
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/worlds/level_1.world
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/models
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/models/erc_rover
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/models/erc_rover/model.config
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/models/erc_rover/model.sdf
+[1.351s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/config
+[1.352s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/config/waypoints.yaml
+[1.352s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/ament_index/resource_index/packages/erc_nav_benchmark
+[1.352s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/package.xml
+[1.352s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/ament_index/resource_index/package_run_dependencies/erc_nav_benchmark
+[1.352s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/ament_index/resource_index/parent_prefix_path/erc_nav_benchmark
+[1.352s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/environment/ament_prefix_path.sh
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/environment/ament_prefix_path.dsv
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/environment/path.sh
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/environment/path.dsv
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/local_setup.bash
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/local_setup.sh
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/local_setup.zsh
+[1.353s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/local_setup.dsv
+[1.354s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/package.dsv
+[1.354s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/ament_index/resource_index/packages/erc_nav_benchmark
+[1.354s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/cmake/erc_nav_benchmarkConfig.cmake
+[1.354s] -- Installing: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/cmake/erc_nav_benchmarkConfig-version.cmake
+[1.354s] -- Up-to-date: /home/yassin/ros2_ws/install/erc_nav_benchmark/share/erc_nav_benchmark/package.xml
+[1.356s] Invoked command in '/home/yassin/ros2_ws/build/erc_nav_benchmark' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yassin/ros2_ws/build/erc_nav_benchmark

@@ -1,0 +1,49 @@
+# ERC Nav Benchmark - Waypoint Configurations
+# Each level defines:
+#   - spawn: rover start position (x, y, yaw_degrees)
+#   - waypoints: 4 sequential target locations (x, y)
+#   - optimal_time: expected best-case traversal seconds
+#   - timeout: maximum allowed seconds before run ends
+#   - proximity_radius: how close (meters) to count a waypoint as cleared
+
+level_1:
+  spawn:
+    x: -9.0
+    y: -9.0
+    yaw: 45.0
+  waypoints:
+    - {x:  -4.0, y:  -6.0}   # WP1 - first open zone
+    - {x:   2.0, y:  -2.0}   # WP2 - mid field
+    - {x:   7.0, y:   5.0}   # WP3 - far right
+    - {x:  -3.0, y:   9.0}   # WP4 - finish zone
+  optimal_time: 40
+  timeout: 120
+  proximity_radius: 1.0
+
+level_2:
+  spawn:
+    x: -9.0
+    y: -9.0
+    yaw: 45.0
+  waypoints:
+    - {x:  -5.0, y:  -5.0}   # WP1 - past initial cluster
+    - {x:   2.0, y:   2.0}   # WP2 - through barrier gap
+    - {x:   8.0, y:  -6.0}   # WP3 - corner zone
+    - {x:   0.0, y:   9.0}   # WP4 - top finish
+  optimal_time: 70
+  timeout: 180
+  proximity_radius: 1.0
+
+level_3:
+  spawn:
+    x: -9.0
+    y: -9.0
+    yaw: 45.0
+  waypoints:
+    - {x:  -6.0, y:  -4.0}   # WP1 - through left zone
+    - {x:   1.0, y:   0.5}   # WP2 - slalom exit
+    - {x:   6.5, y:  -5.5}   # WP3 - dense rock field
+    - {x:  -2.0, y:   8.0}   # WP4 - top-left finish
+  optimal_time: 100
+  timeout: 240
+  proximity_radius: 1.0
